@@ -1,6 +1,6 @@
 body {
   position: relative;
-  font: 14px/18px "GothamProRegular", sans-serif;
+  font: 14px/24px "GothamProRegular", sans-serif;
   color: #000;
   background-color: #fff;
   letter-spacing: .01em; }
@@ -35,12 +35,14 @@ body.unscroll {
 
 .title {
   font-size: 18px;
-  line-height: 22px; }
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 0; }
 
 .header {
   font-size: 38px;
   line-height: 44px;
-  letter-spacing: .015em; }
+  letter-spacing: .03em; }
 
 .header_main {
   font-size: 76px;
@@ -116,7 +118,7 @@ body.unscroll {
   letter-spacing: .2em; }
   .btn:hover {
     background: #f4e821;
-    border: 3px solid #f4e821;
+    border: 3px solid #000;
     color: #000; }
 
 .btn_white {
@@ -131,7 +133,7 @@ body.unscroll {
   letter-spacing: .2em; }
   .btn_white:hover {
     background: #f4e821;
-    border: 3px solid #f4e821;
+    border: 3px solid #000;
     color: #000; }
 
 .viber {
@@ -222,7 +224,7 @@ body.unscroll {
     margin-top: 23px; }
   #sec_01 .btn_block {
     margin-top: 51px;
-    margin-bottom: 150px; }
+    margin-bottom: 140px; }
   #sec_01 .btn_wrap {
     display: inline-block; }
   #sec_01 .btn_wrap + .btn_wrap {
@@ -237,6 +239,9 @@ body.unscroll {
     #sec_01 .slider_01 img {
       width: 100%; }
 
+.sec_01-slider_controll,
+.sec_04-slider_controll,
+.sec_06-slider_controll,
 .sec_01-slider_controll {
   width: 100px;
   text-align: center;

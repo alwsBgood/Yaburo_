@@ -3,7 +3,7 @@
 
 body {
 	position: relative;
-	font: 14px/18px $main_font;
+	font: 14px/24px $main_font;
 	color: $main_text_color;
 	background-color: #fff;
     letter-spacing: .01em;
@@ -44,12 +44,14 @@ body.unscroll{
 
 .title{
     font-size: 18px;
-    line-height: 22px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: 0;
 }
 .header{
     font-size: 38px;
     line-height: 44px;
-    letter-spacing: .015em;
+    letter-spacing: .03em;
 }
 .header_main{
     font-size: 76px;
@@ -132,7 +134,7 @@ body.unscroll{
     letter-spacing: .2em;
     &:hover{
         background: $main_color;
-        border: 3px solid #f4e821;
+        border: 3px solid #000;
         color: #000;
     }
 }
@@ -150,7 +152,7 @@ body.unscroll{
     letter-spacing: .2em;
     &:hover{
         background: $main_color;
-        border: 3px solid #f4e821;
+        border: 3px solid #000;
         color: #000;
     }
 }
@@ -251,7 +253,7 @@ body.unscroll{
     .underheader+.underheader{margin-top: 23px;}
     .btn_block{
         margin-top: 51px;
-        margin-bottom: 150px;
+        margin-bottom: 140px;
     }
     .btn_wrap{
         display: inline-block;
@@ -270,6 +272,9 @@ body.unscroll{
     }
 }
 
+.sec_01-slider_controll,
+.sec_04-slider_controll,
+.sec_06-slider_controll,
 .sec_01-slider_controll{
     width: 100px;
     text-align: center;

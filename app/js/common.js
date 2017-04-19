@@ -250,6 +250,7 @@ $('.slider_04').slick({
   dots: false,
   arrows: false,
   infinite: true,
+  autoplay: true,
   slidesToScroll: 1,
   asNavFor: '.sec_04-slider_controll',
   fade: true
