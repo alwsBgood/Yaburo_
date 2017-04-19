@@ -1,0 +1,9 @@
+@import "bourbon";
+
+@include font-face("AngleciaProDisplay-SemiBoldItal", "fonts/AngleciaProDisplay-SemiBoldItal", $file-formats: woff woff2);
+
+@include font-face("GothamProLight", "fonts/GothamProLight", $file-formats: woff woff2);
+@include font-face("GothamProRegular", "fonts/GothamProRegular", $file-formats: woff woff2);
+@include font-face("GothamProMedium", "fonts/GothamProMedium", $file-formats: woff woff2);
+@include font-face("GothamProBold", "fonts/GothamProBold", $file-formats: woff woff2);
+@include font-face("GothamProBlack", "fonts/GothamProBlack", $file-formats: woff woff2);

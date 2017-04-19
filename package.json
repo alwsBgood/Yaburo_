@@ -1,0 +1,16 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "_optimized_gulp_scss",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.0.4",
+    "imagemin-pngquant": "^4.2.2",
+    "node-bourbon": "^4.2.3"
+  }
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "AngleciaProDisplay-SemiBoldItal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/AngleciaProDisplay-SemiBoldItal.woff2") format("woff2"), url("fonts/AngleciaProDisplay-SemiBoldItal.woff") format("woff"); }
+
+@font-face {
+  font-family: "GothamProLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamProLight.woff2") format("woff2"), url("fonts/GothamProLight.woff") format("woff"); }
+
+@font-face {
+  font-family: "GothamProRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamProRegular.woff2") format("woff2"), url("fonts/GothamProRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: "GothamProMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamProMedium.woff2") format("woff2"), url("fonts/GothamProMedium.woff") format("woff"); }
+
+@font-face {
+  font-family: "GothamProBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamProBold.woff2") format("woff2"), url("fonts/GothamProBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "GothamProBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/GothamProBlack.woff2") format("woff2"), url("fonts/GothamProBlack.woff") format("woff"); }

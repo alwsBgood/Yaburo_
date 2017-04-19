@@ -1,0 +1,70 @@
+@import "bourbon";
+@import "vars.scss";
+
+@media (min-width: 768px) and (max-width: 991px){
+  footer{
+    .politics a{
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media screen and (max-height: 760px){
+  .md_large .md_content {max-height: 320px;}
+}
+
+@media (max-width: 767px) {
+  footer{
+    text-align: center;
+    .politics{
+      a{
+         font-size: 14px;
+         display: block;
+         text-align: center;
+       }
+     a+a{margin-left: 0 }
+    }
+    .logo_rezart{
+      display: inline-block;
+      float: none;
+      margin-top: 20px;
+    }
+  }
+  div[id*="modal_callback"]{
+    min-width: 510px;
+    .md-content{
+      padding: 35px;
+      background: #fff;
+    }
+    h2{
+      margin: 30px 0;
+      line-height: 34px;
+    }
+    form {
+      display: block;
+      max-width: 390px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .field{
+      max-width: 360px;
+      width: 100%;
+    }
+    .field+.field {
+     margin-top: 15px
+    }
+    .btn{
+      margin: 25px auto 0;
+    }
+  }
+  div[id*='modal_politics']{
+    h2{padding-top: 70px;}
+    .btn_close_modal{
+      top: 20px;
+    }
+  }
+}
