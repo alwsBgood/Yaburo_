@@ -1272,23 +1272,25 @@ input:-ms-input-placeholder {
       display: none; }
     #sec_09 .sec_09-slider_controll {
       float: left;
-      margin-top: 10px; }
+      margin-top: 15px; }
     #sec_09 .second_row {
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
   #sec_10 .col-5, #sec_10 .col-7 {
     width: 100%;
     padding-left: 15px; }
   #sec_10 .text br {
     display: none; }
   #sec_11 {
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     background-position: top center;
     background-image: url(../img/sec_10-img-2.png); }
   #sec_12 {
-    padding: 180px 0 140px; }
+    padding: 100px 0 140px;
+    text-align: center; }
     #sec_12 form {
       width: 320px;
-      margin: 0 auto; }
+      margin: 60px auto 0; }
       #sec_12 form .input_field, #sec_12 form .textarea_field {
         float: none;
         display: block;

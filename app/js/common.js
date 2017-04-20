@@ -290,7 +290,15 @@ $('.slider_09').slick({
   arrows: false,
   infinite: true,
   slidesToScroll: 1,
-  asNavFor: '.sec_09-slider_controll'
+  asNavFor: '.sec_09-slider_controll',
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 $('.sec_09-slider_controll').slick({
   slidesToShow: 1,
