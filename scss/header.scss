@@ -427,3 +427,114 @@ body.unscroll{
     }
   }
 }
+
+@media (max-width: 767px) {
+    [class*='col-']{width: 100%;}
+    .main_wrap{
+      padding: 0;
+    }
+    #sec_01{
+      height: auto;
+      padding-bottom: 120px;
+      .content_box{
+          margin-top: 67px;
+          .header_main{
+              font-size: 50px
+          }
+      }
+      .pattern_box{
+          right: 0;
+      }
+      .slider_01{
+          right: 0px;
+          left: 0px;
+          top: 120px;
+          transform: translateY(0%);
+          bottom: initial;
+          overflow: hidden;
+          max-height: 400px;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.6)
+          }
+      }
+      .sec_01-slider_controll {
+          display: none;
+      }
+      .btn_block{
+          margin-bottom: 0;
+      }
+    }
+}
+
+
+@media (max-width: 540px) {
+    #sec_01{
+        padding-bottom: 80px;
+        .content_box{
+            padding-top: 60px;
+        }
+        .btn_block{
+          margin-bottom: 0;
+          margin-top: 40px;
+      }
+      .slider_01{
+        display: none;
+      }
+      .btn_wrap{
+        vertical-align: top;
+      }
+      .btn_white, .btn{
+          width: 180px;
+          text-align: center;
+          vertical-align: top;
+      }
+    }
+}
+
+@media (max-width: 540px) {
+    .title{
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0;
+    }
+    .header{
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: .03em;
+    }
+    .header_main{
+        font-size: 60px;
+        line-height: 39px;
+        letter-spacing: .015em;
+    }
+    #sec_01{
+        .content_box{
+            margin-top: 50px;
+            .header_main{
+                font-size: 37px;
+                line-height: 42px;
+            }
+            .underheader{
+                font-size: 14px;
+            }
+        }
+        .btn{
+            display: none;
+        }
+        .btn_white{
+            width: 240px;
+        }
+        .btn_block{
+            text-align: center;
+        }
+    }
+}

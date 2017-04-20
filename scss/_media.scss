@@ -16,7 +16,12 @@
       margin-bottom: 35px;
     }
     img{width: 100%;}
-    .animation_block{margin-top: 72px;}
+    .animation_block{
+      margin-top: 72px;
+      &:before{
+        font-size: 740px;
+      }
+    }
   }
   #sec_04{
     .content_block{
@@ -29,17 +34,35 @@
     }
   }
   #sec_05{
+    padding-bottom: 130px;
     background: none;
+    .mobile{
+      display: block;
+      margin: 20px 0;
+    }
+    .afterheader{
+      margin-top: 0;
+    }
+    .item, .item:hover, .item.animation{
+      .title:before, .title:after{
+        width: 100%;
+      }
+    }
+    .col-5, .col-7{
+      width: 50%;
+    }
+    .item+.item{margin-top: 49px;}
   }
   #sec_06{
-    padding-bottom: 135px;
+    padding-bottom: 105px;
+    padding-top: 150px;
     .block_years{
       position: relative;
       display: inline-block;
       top: initial;
       bottom: 70px;
       right: initial;
-      left: -390px;
+      left: -320px;
     }
     .slider_06{
       margin-bottom: 0px;
@@ -49,14 +72,26 @@
     }
     .numbers_block{
       .item{
-        max-width: 170px;
+        max-width: 155px;
+        margin-right: -20px;
+        margin-bottom: 35px;
       }
     }
   }
   #sec_07{
+    padding: 100px 0 20px;
     .item{
       margin-bottom: 90px;
       br{display: none}
+    }
+    .mycol-4{
+      width: 50%;
+    }
+    .wrap:before{
+      display: none;
+    }
+    .wrap:after{
+      left: 50%;
     }
   }
   #sec_08{
@@ -69,11 +104,14 @@
     }
   }
   #sec_09{
+    padding-bottom: 80px;
     .header{
       margin-right: -40px;
+      font-size: 32px;
     }
     .number_perc{
       margin-left: 20px;
+      font-size: 110px;
     }
     .vertical_text{
       right: -5px;
@@ -83,6 +121,7 @@
     }
   }
   #sec_10{
+    .col-5, .col-7{width: 100%; padding-left: 15px;}
     .text{
       br{
         display: none;
@@ -118,7 +157,7 @@
       }
     }
     .header{
-      font-size: 32px;
+      font-size: 29px;
     }
   }
   footer{
@@ -244,6 +283,227 @@
 }
 
 @media (max-width: 767px) {
+  .main_wrap{
+    padding: 0;
+  }
+  #sec_02{
+    padding-top: 100px;
+    .item{
+      margin: 60px auto 0 !important;
+      max-width: 380px;
+      br{display: none}
+    }
+    .beforeheader,
+    .header,
+    .header_main,
+    .sec_number{
+      width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  #sec_03{
+    padding-bottom: 70px;
+    padding-top: 30px;
+    .header{
+      margin-bottom: 35px;
+    }
+    .animation_block{
+      display: none
+    }
+  }
+  #sec_04{
+    .desctop{display: none}
+    .mobile{
+      display: block;
+      margin-bottom: 40px;
+      .text{max-width: 100%;}
+    }
+    .content_block{
+      padding-left: 0px;
+      .header{
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 30px;
+      }
+    }
+    .slider_04{
+      img{width: 100%;}
+    }
+    .star_text{
+      width: 70%;
+    }
+  }
+  #sec_05{
+    padding-bottom: 130px;
+    background: none;
+    .header{
+      font-size: 26px;
+      &:before{
+        top: 17px;
+      }
+    }
+    .mobile{
+      display: block;
+      margin: 40px 0;
+    }
+    .afterheader{
+      margin-top: 0;
+    }
+    .item, .item:hover, .item.animation{
+      .title:before, .title:after{
+        width: 100%;
+      }
+    }
+    .col-5, .col-7{
+      width: 50%;
+    }
+    .item+.item{margin-top: 33px;}
+    .btn{
+      width: 100%;
+      text-align: center;
+    }
+    .item{
+      .text{
+        line-height: 19px;
+      }
+      .title{font-size: 14px;}
+    }
+  }
+  #sec_06{
+    padding-bottom: 0px;
+    padding-top: 150px;
+    .block_years{
+      position: relative;
+      display: inline-block;
+      top: initial;
+      bottom: 70px;
+      right: initial;
+      left: -320px;
+    }
+    .slider_06{
+      display: none;
+    }
+    .sec_06-slider_controll{
+      display: none;
+    }
+    .numbers_block{
+      .item{
+        max-width: 200px;
+        margin-right: 20px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  #sec_07{
+    padding: 100px 0 20px;
+    .item{
+      margin-bottom: 90px;
+      br{display: none}
+    }
+    .mycol-4{
+      width: 50%;
+    }
+    .wrap:before{
+      display: none;
+    }
+    .wrap:after{
+      left: 50%;
+    }
+  }
+  #sec_08{
+    text-align: center;
+    padding: 100px 0;
+    form{
+      width: 300px;
+      margin: 60px auto 0;
+      .input_box{
+        float: right;
+      }
+    }
+  }
+  #sec_09{
+    padding-bottom: 80px;
+    .col-4, .col-3{
+      width: 50%;
+    }
+    .header{
+      margin-right: 0px;
+      font-size: 32px;
+      margin-bottom: 70px;
+    }
+    .number_perc{
+      line-height: 130px;
+      margin-left: 20px;
+      font-size: 110px;
+
+    }
+    .vertical_text{
+      right: initial;
+      left: 200px;
+      &:before{
+        width: 110px;
+        left: -27px;
+      }
+    }
+    .first_title{
+      margin-top: 0;
+    }
+    .second_title{
+      margin-top: 50px;
+      margin-left: 0;
+    }
+    .sec_number{
+      display: none;
+    }
+    .sec_09-slider_controll{
+      float: left;
+      margin-top: 10px;
+    }
+    .second_row{
+      margin-bottom: 20px;
+    }
+  }
+  #sec_10{
+    .col-5, .col-7{width: 100%; padding-left: 15px;}
+    .text{
+      br{
+        display: none;
+      }
+    }
+  }
+  #sec_11{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/sec_10-img-2.png);
+  }
+  #sec_12{
+    padding: 180px 0 140px;
+    form{
+      width: 320px;
+      margin: 0 auto;
+      .input_field, .textarea_field{
+        float: none;
+        display: block;
+        width: 320px;
+      }
+      .input_field+.input_field{
+        margin-left: 0;
+        margin-top: 40px;
+      }
+      textarea{
+        width: 220px;
+      }
+      .btn_white{
+        float: none;
+        margin: 30px auto 0;
+        width: 320px;
+      }
+    }
+    .header{
+      font-size: 29px;
+    }
+  }
   footer{
     text-align: center;
     .politics{
@@ -261,7 +521,7 @@
     }
   }
   div[id*="modal_callback"]{
-    min-width: 510px;
+    min-width: 310px;
     .md-content{
       padding: 35px;
       background: #fff;

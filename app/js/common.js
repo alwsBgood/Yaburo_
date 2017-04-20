@@ -177,50 +177,50 @@ $('.md-overlay').click(function() {
 });
 
 
-// Perfect Pxel
+// // Perfect Pxel
 
-$('body').each(function() {
-  var body = $(this);
-  var img_url = $(this).data('img');
-  var img = new Image();
-  img.src = img_url;
-  img.onload = function(){
-    var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-    var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-    body.append(ppbox);
-    body.append(ppbtn);
-  };
-});
-function myOff() {
-  var ppbtntext = $('#ppbtn').text();
-  if (ppbtntext == 'ON') {
-    $('#ppbtn').text('OFF');
-    $('#pp').css('display', 'none');
-  } else {
-    $('#ppbtn').text('ON');
-    $('#pp')        .css({
-      ' z-index' : '1000000',
-      display: 'block'
-    });
+// $('body').each(function() {
+//   var body = $(this);
+//   var img_url = $(this).data('img');
+//   var img = new Image();
+//   img.src = img_url;
+//   img.onload = function(){
+//     var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
+//     var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
+//     body.append(ppbox);
+//     body.append(ppbtn);
+//   };
+// });
+// function myOff() {
+//   var ppbtntext = $('#ppbtn').text();
+//   if (ppbtntext == 'ON') {
+//     $('#ppbtn').text('OFF');
+//     $('#pp').css('display', 'none');
+//   } else {
+//     $('#ppbtn').text('ON');
+//     $('#pp')        .css({
+//       ' z-index' : '1000000',
+//       display: 'block'
+//     });
 
-  }
-}
+//   }
+// }
 
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-      $('#ppbtn').text('OFF');
-      $('#pp').css('display', 'none');
-    } else {
-      $('#ppbtn').text('ON');
-      $('#pp')        .css({
-        ' z-index' : '1000000',
-        display: 'block'
-      });
-    }
-  }
-});
+// $('html').keydown(function(){
+//   var ppbtntext = $('#ppbtn').text();
+//   if (event.keyCode == 81) {
+//     if (ppbtntext == 'ON') {
+//       $('#ppbtn').text('OFF');
+//       $('#pp').css('display', 'none');
+//     } else {
+//       $('#ppbtn').text('ON');
+//       $('#pp')        .css({
+//         ' z-index' : '1000000',
+//         display: 'block'
+//       });
+//     }
+//   }
+// });
 
 
 

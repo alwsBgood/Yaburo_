@@ -350,3 +350,87 @@ body.unscroll {
       display: none; }
     #sec_01 .btn_block {
       margin-bottom: 0; } }
+
+@media (max-width: 767px) {
+  [class*='col-'] {
+    width: 100%; }
+  .main_wrap {
+    padding: 0; }
+  #sec_01 {
+    height: auto;
+    padding-bottom: 120px; }
+    #sec_01 .content_box {
+      margin-top: 67px; }
+      #sec_01 .content_box .header_main {
+        font-size: 50px; }
+    #sec_01 .pattern_box {
+      right: 0; }
+    #sec_01 .slider_01 {
+      right: 0px;
+      left: 0px;
+      top: 120px;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      bottom: initial;
+      overflow: hidden;
+      max-height: 400px; }
+      #sec_01 .slider_01:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6); }
+    #sec_01 .sec_01-slider_controll {
+      display: none; }
+    #sec_01 .btn_block {
+      margin-bottom: 0; } }
+
+@media (max-width: 540px) {
+  #sec_01 {
+    padding-bottom: 80px; }
+    #sec_01 .content_box {
+      padding-top: 60px; }
+    #sec_01 .btn_block {
+      margin-bottom: 0;
+      margin-top: 40px; }
+    #sec_01 .slider_01 {
+      display: none; }
+    #sec_01 .btn_wrap {
+      vertical-align: top; }
+    #sec_01 .btn_white, #sec_01 .btn {
+      width: 180px;
+      text-align: center;
+      vertical-align: top; } }
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0; }
+  .header {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: .03em; }
+  .header_main {
+    font-size: 60px;
+    line-height: 39px;
+    letter-spacing: .015em; }
+  #sec_01 .content_box {
+    margin-top: 50px; }
+    #sec_01 .content_box .header_main {
+      font-size: 37px;
+      line-height: 42px; }
+    #sec_01 .content_box .underheader {
+      font-size: 14px; }
+  #sec_01 .btn {
+    display: none; }
+  #sec_01 .btn_white {
+    width: 240px; }
+  #sec_01 .btn_block {
+    text-align: center; } }
