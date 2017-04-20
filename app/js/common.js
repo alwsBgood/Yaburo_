@@ -314,3 +314,54 @@ $('.slick-slider').on('init reInit beforeChange', function (event, slick, curren
 
   var textbo = $(this).find('.slide_0' + i).find('.animation_block').addClass('animation');
 });
+
+
+function funcItemsHeight(el){
+
+ var maxHeight = 0,
+ widthPosition = 0,
+ widthWindowPosition = 0,
+ elSum = 0,
+ i = 0,
+ $el;
+
+ elSum = $(".mycol-4").length;
+
+ $(el).each(function() {
+
+  $el = $(this);
+  $($el).height('auto');
+  widthPosition = $el.width();
+  widthWindowPosition = $(window).width();
+  var nItem = widthWindowPosition / widthPosition;
+  nItem = nItem ^ 0;
+
+  if (i%nItem == 0) {
+   $(".active_row").height(maxHeight);
+   $(".mycol-4").removeClass("active_row");
+   maxHeight = $el.height();
+  } else {
+   if ($el.height() > maxHeight) { 
+    maxHeight = $el.height();
+   } 
+  }
+
+  $el.addClass("active_row");
+
+  i += 1;
+  if( i == elSum ) {
+   $(".active_row").height(maxHeight);
+   $(".mycol-4").removeClass("active_row");
+  }
+
+ });
+}
+
+$(document).ready(function(){
+ funcItemsHeight('.mycol-4');
+});
+
+
+$(window).resize(function(){
+ funcItemsHeight('.mycol-4');
+});

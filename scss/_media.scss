@@ -2,6 +2,125 @@
 @import "vars.scss";
 
 @media (min-width: 768px) and (max-width: 991px){
+  .main_wrap{
+    padding: 0;
+  }
+  #sec_02{
+    padding-top: 150px;
+    .item{
+      br{display: none}
+    }
+  }
+  #sec_03{
+    .header{
+      margin-bottom: 35px;
+    }
+    img{width: 100%;}
+    .animation_block{margin-top: 72px;}
+  }
+  #sec_04{
+    .content_block{
+      padding-left: 0px;
+      .header{
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  #sec_05{
+    background: none;
+  }
+  #sec_06{
+    padding-bottom: 135px;
+    .block_years{
+      position: relative;
+      display: inline-block;
+      top: initial;
+      bottom: 70px;
+      right: initial;
+      left: -390px;
+    }
+    .slider_06{
+      margin-bottom: 0px;
+    }
+    .sec_06-slider_controll{
+      bottom: 0;
+    }
+    .numbers_block{
+      .item{
+        max-width: 170px;
+      }
+    }
+  }
+  #sec_07{
+    .item{
+      margin-bottom: 90px;
+      br{display: none}
+    }
+  }
+  #sec_08{
+    form{
+      width: 300px;
+      margin: 0 auto;
+      .input_box{
+        float: right;
+      }
+    }
+  }
+  #sec_09{
+    .header{
+      margin-right: -40px;
+    }
+    .number_perc{
+      margin-left: 20px;
+    }
+    .vertical_text{
+      right: -5px;
+    }
+    .first_title{
+      margin-top: 0;
+    }
+  }
+  #sec_10{
+    .text{
+      br{
+        display: none;
+      }
+    }
+  }
+  #sec_11{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/sec_10-img-2.png);
+  }
+  #sec_12{
+    padding: 180px 0 140px;
+    form{
+      width: 320px;
+      margin: 0 auto;
+      .input_field, .textarea_field{
+        float: none;
+        display: block;
+        width: 320px;
+      }
+      .input_field+.input_field{
+        margin-left: 0;
+        margin-top: 40px;
+      }
+      textarea{
+        width: 220px;
+      }
+      .btn_white{
+        float: none;
+        margin: 30px auto 0;
+        width: 320px;
+      }
+    }
+    .header{
+      font-size: 32px;
+    }
+  }
   footer{
     .politics a{
       font-size: 13px;
@@ -10,7 +129,114 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-
+  .main_wrap{
+    padding: 0;
+  }
+  .container{
+    padding: 0 50px;
+  }
+  #sec_02{
+    padding-top: 150px;
+  }
+  #sec_03{
+    img{width: 100%;}
+    .animation_block{margin-top: 0;}
+  }
+  #sec_04{
+    .content_block{
+      padding-left: 20px;
+    }
+  }
+  #sec_06{
+    padding-bottom: 135px;
+    .block_years{
+      position: relative;
+      display: inline-block;
+      top: initial;
+      bottom: 70px;
+      right: initial;
+      left: -390px;
+    }
+    .slider_06{
+      margin-bottom: 0px;
+    }
+    .sec_06-slider_controll{
+      bottom: 0;
+    }
+    .numbers_block{
+      .item{
+        max-width: 170px;
+      }
+    }
+  }
+  #sec_07{
+    .item{
+      margin-bottom: 90px;
+      br{display: none}
+    }
+  }
+  #sec_08{
+    form{
+      width: 300px;
+      margin: 0 auto;
+      .input_box{
+        float: right;
+      }
+    }
+  }
+  #sec_09{
+    .header{
+      margin-right: -40px;
+    }
+    .number_perc{
+      margin-left: 20px;
+    }
+    .vertical_text{
+      right: -5px;
+    }
+    .first_title{
+      margin-top: 0;
+    }
+  }
+  #sec_10{
+    .text{
+      br{
+        display: none;
+      }
+    }
+  }
+  #sec_11{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/sec_10-img-2.png);
+  }
+  #sec_12{
+    padding: 180px 0 140px;
+    form{
+      width: 320px;
+      margin: 0 auto;
+      .input_field, .textarea_field{
+        float: none;
+        display: block;
+        width: 320px;
+      }
+      .input_field+.input_field{
+        margin-left: 0;
+        margin-top: 40px;
+      }
+      textarea{
+        width: 220px;
+      }
+      .btn_white{
+        float: none;
+        margin: 30px auto 0;
+        width: 320px;
+      }
+    }
+    .header{
+      font-size: 32px;
+    }
+  }
 }
 
 @media screen and (max-height: 760px){

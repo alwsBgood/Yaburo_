@@ -130,7 +130,7 @@ body.unscroll{
 	color: $main_color;
 	font: 12px $btn_font;
 	text-transform: uppercase;
-    padding-top: 3px;
+    padding-top: 6px;
     letter-spacing: .2em;
     &:hover{
         background: $main_color;
@@ -148,7 +148,7 @@ body.unscroll{
     color: #000;
     font: 12px $btn_font;
     text-transform: uppercase;
-    padding-top: 3px;
+    padding-top: 6px;
     letter-spacing: .2em;
     &:hover{
         background: $main_color;
@@ -187,8 +187,13 @@ body.unscroll{
 
 #sec_01{
     position: relative;
-    padding: 9px 0 125px;
+    padding: 9px 0 200px;
     color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    .container{
+        position: relative;
+    }
     .phone_box{
         margin-top: 8px;
         float: right;
@@ -227,7 +232,17 @@ body.unscroll{
     .content_box{
         position: relative;
         z-index: 10;
+        padding-top: 110px;
         margin-top: 310px;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            top: 0;
+            left: 0;
+            background-color: $main_color;
+        }
     }
     h1{
         margin-bottom: 53px;
@@ -263,7 +278,8 @@ body.unscroll{
         position: absolute;
         z-index: 5;
         right: 0px;
-        top: 150px;
+        top: 50%;
+        transform: translateY(-60%);
         left: 44%;
         bottom: 60px;
         img{
@@ -275,7 +291,7 @@ body.unscroll{
 .sec_01-slider_controll,
 .sec_04-slider_controll,
 .sec_06-slider_controll,
-.sec_01-slider_controll{
+.sec_09-slider_controll{
     width: 100px;
     text-align: center;
     color: #f4e821;
@@ -285,3 +301,129 @@ body.unscroll{
     font-weight: 100;
 }
 
+@media (max-width: 1900px){
+    #sec_01{
+        .content_box{
+            margin-top: 200px;
+        }
+    }
+}
+
+
+@media (max-width: 1900px) and (min-height: 1100px) {
+    #sec_01{
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    #sec_01{
+        .content_box{
+            margin-top: 200px;
+            padding-top: 80px;
+            .header_main{
+                font-size: 60px
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #sec_01{
+        .underheader{
+            font-size: 16px;
+        }
+        .header_main{
+            font-size: 44px;
+            margin-bottom: 20px;
+            line-height: 52px;
+        }
+        .btn_white, .btn{
+            width: 220px;
+            height: 50px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-height: 900px) and (min-height: 761px){
+    #sec_01{
+        .content_box{
+            margin-top: 100px;
+            padding-top: 80px;
+            .header_main{
+                font-size: 60px
+            }
+        }
+    }
+}
+
+
+@media (max-height: 760px) and (min-height: 701px){
+    #sec_01{
+        .content_box{
+            margin-top: 150px;
+            padding-top: 60px;
+            .header_main{
+                font-size: 44px;
+                margin-bottom: 20px;
+                line-height: 52px;
+            }
+            .underheader{
+                font-size: 14px;
+            }
+        }
+        .btn_block{margin-bottom: 50px;}
+        .slider_01 {left: 50%;}
+    }
+}
+
+@media (max-height: 700px){
+    #sec_01{
+        .content_box{
+            margin-top: 60px;
+            padding-top: 60px;
+            .header_main{
+                font-size: 44px;
+                margin-bottom: 20px;
+                line-height: 52px;
+            }
+        }
+        .btn_block{margin-bottom: 50px;}
+        .slider_01 {left: 55%;}
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  .main_wrap{
+    padding: 0;
+  }
+  #sec_01{
+    height: auto;
+    padding-bottom: 120px;
+    .content_box{
+        margin-top: 85px;
+        .underheader{
+            width: 43%;
+            font-size: 15px;
+        }
+        .header_main{
+            font-size: 50px
+        }
+    }
+    .pattern_box{
+        right: 0;
+    }
+    .slider_01{
+        right: 40px;
+    }
+    .sec_01-slider_controll {
+        display: none;
+    }
+    .btn_block{
+        margin-bottom: 0;
+    }
+  }
+}

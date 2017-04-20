@@ -35,7 +35,7 @@ div[id*="modal_callback"]{
   h2{
     font-size: 29px;
     line-height: 36px;
-    margin: 30px 30px 0px;
+    margin: 30px 30px 50px;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
@@ -48,19 +48,35 @@ div[id*="modal_callback"]{
     display: block;
   }
   .field{
-    max-width: 360px;
+    max-width: 290px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    label{
+      float: left;
+      font-family: $italic_font;
+      font-size: 18px;
+      line-height: 24px;
+      margin-right: 10px;
+    }
     input{
-      width: 100%;
+      float: right;
+      width: 220px;
+      margin-top: -5px;
     }
   }
   .field+.field {
-   margin-top: 5px
+   margin-top: 45px
   }
-  .btn{
-    margin: 10px auto 0;
+  .btn_white{
+    margin: 30px auto 0;
+    background-color: $main_color;
+    border-color: #000;
+    // border: none;
+    &:hover{
+      background-color: #fff;
+      border: none;
+    }
   }
 }
 
@@ -144,13 +160,20 @@ div[id*="modal_politics"]{
     line-height: 54px;
 }
 
+.textarea_field{
+  .allert, .allert_tell {
+    margin-top: 8px;
+    right: 10px;
+  }
+}
+
 .allert, .allert_tell {
     position: absolute;
     z-index: 20;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -19px;
     display: block;
-    right: 15px;
+    right: 0px;
     height: 20px;
     width: 20px;
     color: #FF6565;
@@ -208,8 +231,9 @@ div[id*="modal_politics"]{
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   a{
-    color: #000;
+    color: #fefefe;
     transition: all .3s;
+    display: block;
     svg {
       .a {
         transition: all .3s;
@@ -326,43 +350,43 @@ div[id*="modal_politics"]{
   position: relative;
   display: block;
   input{
-    padding: 25px 0;
-    width: 100%;
-    color: #000;
-    font: 18px/20px $main_font;
+    background: transparent;
+    padding: 0px 25px 2px;
+    color: $main_color;
+    font: 14px/20px $main_font;
   }
   textarea{
-    padding: 25px 0;
-    width: 100%;
-    color: #000;
-    font: 18px/20px $main_font;
+    background: transparent;
+    padding: 0px 25px 2px;
+    color: $main_color;
+    font: 14px/20px $main_font;
   }
 }
 
 .field:before{
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
+  right: 0;
+  bottom: 4px;
+  width: 220px;
+  height: 2px;
   background: #f0f0f0;
   transition: all 0.4s;
 }
 
 .bar{
   position: absolute;
-  left: 0;
-  bottom: 0;
+  right: 0;
+  bottom: 4px;
   width: 0;
-  height: 3px;
+  height: 2px;
   background: $main_color;
   transition: all 0.4s;
 }
 
 input:active+.bar, input:focus+.bar,
 textarea:active+.bar, textarea:focus+.bar{
-  width: 100%;
+  width: 220px;
 }
 
 .field+.field {
@@ -371,20 +395,20 @@ textarea:active+.bar, textarea:focus+.bar{
 
 input::-webkit-input-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 14px/20px $main_font;
 }
 
 input:-moz-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 14px/20px $main_font;
 }
 
 input::-moz-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 14px/20px $main_font;
 }
 
 input:-ms-input-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 14px/20px $main_font;
 }
