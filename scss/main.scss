@@ -31,6 +31,7 @@
   .header{margin-bottom: 20px;}
   .header_main{margin-bottom: 55px;}
   .item{
+    opacity: 0;
     max-width: 330px;
     position: relative;
     .title{
@@ -40,15 +41,15 @@
       &:before{
         content: "";
         position: absolute;
-        width: 100%;
+        width: 0%;
         height: 3px;
         bottom: -17px;
         left: 0;
         background-color: #000;
-        transition: width .5s;
+        transition: width 2.5s;
       }
     }
-    .title.animation{
+    .title.animated{
       &:before{
         width: 100%;
       }
@@ -66,6 +67,7 @@
   }
   .item_01{
     margin-top: 105px;
+    animation-delay: .4s;
     &:before{
       top: 55px;
       left: 80px;
@@ -74,6 +76,7 @@
   .item_02{
     margin-top: 260px;
     margin-left: 10px;
+    animation-delay: .8s;
     &:before{
       top: 14px;
       left: 55px;
@@ -82,6 +85,7 @@
   .item_03{
     margin-top: 160px;
     margin-left: 35px;
+    animation-delay: 1.2s;
     &:before{
       top: 94px;
       left: 65px;
@@ -99,11 +103,7 @@
   .text{
     max-width: 455px;
   }
-  .text+.text{margin-top: 25px}
-  .animation_block{
-    position: relative;
-    float: right;
-    margin-top: -80px;
+  .content_animation{
     &:before{
       content: "o";
       position: absolute;
@@ -115,7 +115,17 @@
       text-transform: uppercase;
       z-index: -1;
       bottom: -302px;
-      left: -326px;
+      right: -526px;
+    }
+  }
+  .text+.text{margin-top: 25px}
+  .animation_block{
+    max-height: 577px;
+    position: relative;
+    float: right;
+    margin-top: -80px;
+    .mask, .anim_cont{
+      animation-delay: .6s;
     }
   }
 }
@@ -132,16 +142,16 @@
     &:before{
       content: "";
       position: absolute;
-      width: 100%;
+      width: 0%;
       max-width: 220px;
       height: 3px;
       bottom: -27px;
       left: 0;
       background-color: $main_color;
-      transition: width .5s;
+      transition: width 2.5s;
     }
   }
-  .header_main.animation{
+  .header_main.animated{
     &:before{
       width: 100%;
     }
@@ -198,6 +208,7 @@
   .item{
     margin-top: 65px;
     max-width: 333px;
+    opacity: 0;
     float: right;
     cursor: default;
     .title{
@@ -206,12 +217,12 @@
       &:before{
         content: "";
         position: absolute;
-        width: 469px;
+        width: 0px;
         height: 3px;
         bottom: -14px;
         right: 0;
         background-color: #000;
-        transition: width .5s;
+        transition: width 2.5s;
       }
       &:after{
         content: "";
@@ -224,19 +235,25 @@
         transition: width .5s;
       }
     }
+    .title.animated{
+      &:before{
+        width: 469px;
+      }
+    }
     &:hover{
       .title:after{
         width: 469px;
       }
     }
   }
-  .item.animation{
-    &:before{
-      width: 469px;
-    }
-  }
   .item+.item{
     margin-top: 43px;
+  }
+  .item_02{
+    animation-delay: .4s;
+  }
+  .item_03{
+    animation-delay: .8s;
   }
 }
 
@@ -320,6 +337,9 @@
     position: absolute;
     bottom: 165px;
     right: 15px;
+  }
+  .slider_wrapper{
+    max-width: 480px;
   }
 }
 

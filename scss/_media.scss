@@ -18,6 +18,8 @@
     img{width: 100%;}
     .animation_block{
       margin-top: 72px;
+    }
+    .content_animation{
       &:before{
         font-size: 740px;
       }
@@ -310,6 +312,9 @@
     }
     .animation_block{
       display: none
+    }
+    .content_animation{
+      &:before{display:none}
     }
   }
   #sec_04{

@@ -44,7 +44,10 @@ gulp.task('scripts', function() {
     './app/libs/niftymodal/modalEffects.js',
     './app/libs/masked/mask.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
-    './app/libs/slick/slick.min.js'
+    './app/libs/slick/slick.min.js',
+    './app/libs/animateNumber/animateNumber.js',
+    './app/libs/waypoints/waypoints.min.js',
+    './app/libs/lightbox2/lightbox.min.js',
 		])
 		.pipe(concat('libs.js'))
 		.pipe(gulp.dest('./app/js/'));

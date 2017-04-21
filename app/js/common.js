@@ -1,3 +1,13 @@
+
+
+jQuery(document).ready(function($) {
+  $('#preloader').fadeOut(1000);
+  $('#sec_01 .content_animation').addClass('fade-in-left')
+  setTimeout(function() {
+    $('.slider_01 .slick-current .animation_block').addClass('animation');
+  }, 1000)
+});
+
 if (localStorage.name && localStorage.email && localStorage.phone)  {
   // запись сохраненных данных сразу в поля, если надо
   $('input[name="name"]').val(localStorage.name);
@@ -177,51 +187,6 @@ $('.md-overlay').click(function() {
 });
 
 
-// // Perfect Pxel
-
-// $('body').each(function() {
-//   var body = $(this);
-//   var img_url = $(this).data('img');
-//   var img = new Image();
-//   img.src = img_url;
-//   img.onload = function(){
-//     var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-//     var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-//     body.append(ppbox);
-//     body.append(ppbtn);
-//   };
-// });
-// function myOff() {
-//   var ppbtntext = $('#ppbtn').text();
-//   if (ppbtntext == 'ON') {
-//     $('#ppbtn').text('OFF');
-//     $('#pp').css('display', 'none');
-//   } else {
-//     $('#ppbtn').text('ON');
-//     $('#pp')        .css({
-//       ' z-index' : '1000000',
-//       display: 'block'
-//     });
-
-//   }
-// }
-
-// $('html').keydown(function(){
-//   var ppbtntext = $('#ppbtn').text();
-//   if (event.keyCode == 81) {
-//     if (ppbtntext == 'ON') {
-//       $('#ppbtn').text('OFF');
-//       $('#pp').css('display', 'none');
-//     } else {
-//       $('#ppbtn').text('ON');
-//       $('#pp')        .css({
-//         ' z-index' : '1000000',
-//         display: 'block'
-//       });
-//     }
-//   }
-// });
-
 
 
 $('.slider_01').slick({
@@ -250,7 +215,6 @@ $('.slider_04').slick({
   dots: false,
   arrows: false,
   infinite: true,
-  autoplay: true,
   slidesToScroll: 1,
   asNavFor: '.sec_04-slider_controll',
   fade: true
@@ -311,18 +275,22 @@ $('.sec_09-slider_controll').slick({
 });
 
 
-
-$('.slick-slider').on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
-
-  var i = (currentSlide ? currentSlide : 0) + 1;
-
-  $('.slick-slider .animation_block').each(function() {
-    $(this).removeClass('animation');
-  })
-
-  var textbo = $(this).find('.slide_0' + i).find('.animation_block').addClass('animation');
+$('.slider_01').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  $(this).find('.animation_block').removeClass('animation');
+  $(this).find('.slick-current .animation_block').addClass('animation');
+});
+$('.slider_04').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  $(this).find('.animation_block').removeClass('animation');
+  $(this).find('.slick-current .animation_block').addClass('animation');
+});
+$('.slider_06').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  $(this).find('.animation_block').removeClass('animation');
+  $(this).find('.slick-current .animation_block').addClass('animation');
 });
 
+
+
+// Auto height for dloated items 
 
 function funcItemsHeight(el){
 
@@ -373,3 +341,170 @@ $(document).ready(function(){
 $(window).resize(function(){
  funcItemsHeight('.mycol-4');
 });
+
+
+//animate number
+    var decimal_places = 1;
+    var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 1;
+
+// waypoints
+
+$('#sec_02').waypoint(
+    function() {
+        if ($("#sec_02").hasClass("animated_block")) {
+        }
+        else{
+            $("#sec_02").addClass("animated_block");
+            $('#sec_02 .content_animation').addClass('fade-in-left');
+            $('#sec_02 .item').addClass('fade-in-bottom');
+            setTimeout(function() {
+              $('#sec_02 .item_01 .title').addClass('animated');
+            }, 800);
+            setTimeout(function() {
+              $('#sec_02 .item_02 .title').addClass('animated');
+            }, 1200);
+            setTimeout(function() {
+              $('#sec_02 .item_03 .title').addClass('animated');
+            }, 1600);
+
+        }
+    },
+    {offset: "350px"}
+
+);
+
+
+$('#sec_03').waypoint(
+    function() {
+        if ($("#sec_03").hasClass("animated_block")) {
+        }
+        else{
+            $("#sec_03").addClass("animated_block");
+            $('#sec_03 .content_animation').addClass('fade-in-left');
+            $('#sec_03 .animation_block').addClass('animation');
+        }
+    },
+    {offset: "450px"}
+
+);
+
+
+$('#sec_04').waypoint(
+    function() {
+        if ($("#sec_04").hasClass("animated_block")) {
+        }
+        else{
+            $("#sec_04").addClass("animated_block");
+            $('#sec_04 .slick-current .animation_block').addClass('animation');
+            $('#sec_04 .content_animation').addClass('fade-in-right');
+            setTimeout(function() {
+              $('#sec_04 .header_main').addClass('animated');
+            }, 1600);
+        }
+    },
+    {offset: "450px"}
+
+);
+
+$('#sec_05').waypoint(
+    function() {
+        if ($("#sec_05").hasClass("animated_block")) {
+        }
+        else{
+            $("#sec_05").addClass("animated_block");
+            $('#sec_05 .content_animation').addClass('fade-in-left');
+            $('#sec_05 .item').addClass('fade-in-right');
+            setTimeout(function() {
+              $('#sec_05 .item_01 .title').addClass('animated');
+            }, 1600);
+            setTimeout(function() {
+              $('#sec_05 .item_02 .title').addClass('animated');
+            }, 2000);
+            setTimeout(function() {
+              $('#sec_05 .item_03 .title').addClass('animated');
+            }, 2400);
+
+        }
+    },
+    {offset: "350px"}
+
+);
+
+
+
+$('#sec_06').waypoint(
+    function() {
+        if ($("#sec_06").hasClass("number")) {
+        }
+        else{
+            $("#sec_06").addClass("number");
+            $('.1_animate_number').animateNumber(
+            {
+                number: 12 * decimal_factor,
+
+                numberStep: function(now, tween) {
+                    var floored_number = Math.floor(now) / decimal_factor,
+                    target = $(tween.elem);
+                    if (decimal_places > 0) {
+                        floored_number = floored_number.toFixed();
+                    }
+
+                    target.text(floored_number);
+                }
+            },
+            2000
+            );
+            $('.2_animate_number').animateNumber(
+            {
+                number: 1180 * decimal_factor,
+
+                numberStep: function(now, tween) {
+                    var floored_number = Math.floor(now) / decimal_factor,
+                    target = $(tween.elem);
+                    if (decimal_places > 0) {
+                        floored_number = floored_number.toFixed();
+                    }
+
+                    target.text(floored_number);
+                }
+            },
+            2000
+            );
+            $('.3_animate_number').animateNumber(
+            {
+                number: 136 * decimal_factor,
+
+                numberStep: function(now, tween) {
+                    var floored_number = Math.floor(now) / decimal_factor,
+                    target = $(tween.elem);
+                    if (decimal_places > 0) {
+                        floored_number = floored_number.toFixed();
+                    }
+
+                    target.text(floored_number);
+                }
+            },
+            2000
+            );
+            $('.4_animate_number').animateNumber(
+            {
+                number: 100 * decimal_factor,
+
+                numberStep: function(now, tween) {
+                    var floored_number = Math.floor(now) / decimal_factor,
+                    target = $(tween.elem);
+                    if (decimal_places > 0) {
+                        floored_number = floored_number.toFixed();
+                    }
+
+                    target.text(floored_number + '%');
+                }
+            },
+            2000
+            );
+            $('#sec_06 .slick-current .animation_block').addClass('animation');
+        }
+    },
+    {offset: "300px"}
+
+);
