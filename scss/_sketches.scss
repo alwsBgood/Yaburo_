@@ -31,16 +31,15 @@ cursor: -webkit-grabbing !important;
 }
 
 div[id*="modal_callback"]{
-  max-width: 500px;
+  max-width: 700px;
   h2{
     font-size: 29px;
     line-height: 36px;
-    margin: 30px 30px 50px;
+    margin: 30px 30px 80px;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
     padding: 20px;
-    background: #fff;
     background-size: cover;
     text-align: center;
   }
@@ -48,7 +47,7 @@ div[id*="modal_callback"]{
     display: block;
   }
   .field{
-    max-width: 290px;
+    max-width: 340px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -63,19 +62,23 @@ div[id*="modal_callback"]{
       float: right;
       width: 220px;
       margin-top: -5px;
+      color: #000;
+    }
+    textarea{
+      color: #000;
     }
   }
   .field+.field {
-   margin-top: 45px
+   margin-top: 55px
   }
   .btn_white{
-    margin: 30px auto 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto 50px;
     background-color: $main_color;
     border-color: #000;
-    // border: none;
     &:hover{
       background-color: #fff;
-      border: none;
     }
   }
 }
@@ -235,7 +238,7 @@ div[id*="modal_politics"]{
     transition: all .3s;
     display: block;
     svg {
-      .a {
+      .aaa {
         transition: all .3s;
         fill: #d4d4d4;
       }
@@ -244,7 +247,7 @@ div[id*="modal_politics"]{
   a:hover{
     color: #000;
     svg {
-      .a {fill: $main_color; }
+      .aaa {fill: #000; }
     }
   }
 }

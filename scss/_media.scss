@@ -1,6 +1,11 @@
 @import "bourbon";
 @import "vars.scss";
 
+@media (max-width: 1900px) and (min-width: 1200px) {
+    #sec_07 .item{ margin-bottom: 90px;}
+}
+
+
 @media (min-width: 768px) and (max-width: 991px){
   .main_wrap{
     padding: 0;
@@ -34,6 +39,9 @@
         margin-bottom: 30px;
       }
     }
+    .star_text{
+      max-width: 60%;
+    }
   }
   #sec_05{
     padding-bottom: 130px;
@@ -45,8 +53,8 @@
     .afterheader{
       margin-top: 0;
     }
-    .item, .item:hover, .item.animation{
-      .title:before, .title:after{
+    .item, .item:hover{
+      .title.animated:before, .title.animated:after{
         width: 100%;
       }
     }
@@ -165,6 +173,7 @@
   footer{
     .politics a{
       font-size: 13px;
+      letter-spacing: 0;
     }
   }
 }
@@ -285,23 +294,61 @@
 }
 
 @media (max-width: 767px) {
+.btn_white{
+  width: 100% !important;
+  max-width: 320px;
+  letter-spacing: .05em;
+}
+.content_animation, .item,
+.field, .textarea_field,
+.slider_09, .content_block, .btn_white{opacity:1 !important;}
+.fade-in-left {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+.fade-in-right {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+.fade-in-bottom {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+.fade-in-top {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+.puff-in-hor {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
   .main_wrap{
     padding: 0;
   }
   #sec_02{
     padding-top: 100px;
     .item{
-      margin: 60px auto 0 !important;
-      max-width: 380px;
+      margin: 30px auto 0 !important;
+      max-width: initial;
       br{display: none}
     }
+    .mobile_slider_02,
+    .mobile_slider_02-slider_controll {display: block;}
+    .mobile_slider_02-slider_controll{
+      margin-top: 50px;
+    }
+    .desctop{display: none}
     .beforeheader,
     .header,
     .header_main,
     .sec_number{
       width: 380px;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   #sec_03{
@@ -355,8 +402,8 @@
     .afterheader{
       margin-top: 0;
     }
-    .item, .item:hover, .item.animation{
-      .title:before, .title:after{
+    .item, .item:hover{
+      .title.animated:before, .title.animated:after{
         width: 100%;
       }
     }
@@ -369,6 +416,7 @@
       text-align: center;
     }
     .item{
+      float: none;
       .text{
         line-height: 19px;
       }
@@ -394,7 +442,7 @@
     }
     .numbers_block{
       .item{
-        max-width: 200px;
+        max-width: 230px;
         margin-right: 20px;
         margin-bottom: 35px;
       }
@@ -409,11 +457,16 @@
     .mycol-4{
       width: 50%;
     }
-    .wrap:before{
+    .wrap{
       display: none;
     }
-    .wrap:after{
-      left: 50%;
+    .mobile_slider_07,
+    .mobile_slider_07-slider_controll {display: block;}
+    .mobile_slider_07{
+      margin-top: 30px;
+      img, .title, .text{
+        max-width: 433px;
+      }
     }
   }
   #sec_08{
@@ -428,6 +481,7 @@
     }
   }
   #sec_09{
+    overflow: hidden;
     padding-bottom: 80px;
     .col-4, .col-3{
       width: 50%;
@@ -457,6 +511,9 @@
     .second_title{
       margin-top: 50px;
       margin-left: 0;
+      &:before{
+        display: none;
+      }
     }
     .sec_number{
       display: none;
@@ -464,6 +521,7 @@
     .sec_09-slider_controll{
       float: left;
       margin-top: 15px;
+      opacity: 1;
     }
     .second_row{
       margin-bottom: 10px;
@@ -484,7 +542,7 @@
     background-image: url(../img/sec_10-img-2.png);
   }
   #sec_12{
-    padding: 100px 0 140px;
+    padding: 100px 0 100px;
     text-align: center;
     form{
       width: 320px;
@@ -528,7 +586,7 @@
     }
   }
   div[id*="modal_callback"]{
-    min-width: 310px;
+    min-width: 400px;
     .md-content{
       padding: 35px;
       background: #fff;
@@ -547,12 +605,6 @@
       max-width: 360px;
       width: 100%;
     }
-    .field+.field {
-     margin-top: 15px
-    }
-    .btn{
-      margin: 25px auto 0;
-    }
   }
   div[id*='modal_politics']{
     h2{padding-top: 70px;}
@@ -560,4 +612,119 @@
       top: 20px;
     }
   }
+}
+
+
+@media (max-width: 535px) {
+  div[id*="modal_callback"]{
+    min-width: 310px;
+    .btn_white{
+      width: 100%;
+    }
+    .field{
+      input{
+        width: 170px;
+      }
+      .bar{
+        width: 170px;
+      }
+      &:before{
+        width: 170px;
+      }
+    }
+  }
+  #sec_02 .beforeheader, #sec_02 .header, #sec_02 .header_main, #sec_02 .sec_number{width: 100%;}
+  #sec_04{
+    .star_text{
+      width: 50%;
+      font-size: 13px;
+    }
+  }
+  #sec_05{
+    .mobile{
+      display: none;
+    }
+    .header{
+      margin-bottom: 50px;
+    }
+  }
+  #sec_06{
+    .numbers_block{
+      .item{
+        max-width: 140px;
+        margin: 40px auto 0 ;
+      }
+    }
+  }
+  #sec_07{
+    .wrap:before, .wrap:after{
+      display: none;
+    }
+  }
+  #sec_08{
+    form{
+      width: 100%;
+      input{
+        width: 200px;
+      }
+      .bar{
+        width: 200px;
+      }
+      .field:before{
+        width: 200px;
+      }
+      .input_box{
+        width: 270px;
+        float: none;
+        margin: 0 auto;
+      }
+      .btn_white{
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+  #sec_09{
+    padding-top: 100px;
+    .header{
+      margin-bottom: 20px;
+    }
+    .number_perc{
+      margin-bottom: 20px;
+    }
+  }
+  #sec_10{
+    .item{
+      &:before{
+        display: none;
+      }
+      padding-left: 90px;
+    }
+  }
+  #sec_12{
+    padding-bottom: 90px;
+    form{
+      width: 100%;
+      max-width: 320px;
+      .field, .textarea_field{
+        width: 100%;
+      }
+      input, textarea{
+        width: 190px;
+      }
+      .bar{
+        width: 190px;
+      }
+      .field:before{
+        width: 190px;
+      }
+      .input_box{
+        width: 100%;
+        max-width: 320px;
+        float: none;
+        margin: 0 auto;
+      }
+    }
+  }
+  [class*='col-']{width: 100% !important;}
 }
