@@ -173,7 +173,6 @@
     max-width: 287px;
     margin-bottom: 25px; }
   #sec_05 .btn {
-    border-color: #000;
     color: #000;
     background-color: #f4e821; }
     #sec_05 .btn:hover {
@@ -721,14 +720,20 @@ div[id*="modal_callback"] {
       margin-top: -5px;
       color: #000; }
     div[id*="modal_callback"] .field textarea {
-      color: #000; }
+      color: #000;
+      height: 80px; }
   div[id*="modal_callback"] .field + .field {
     margin-top: 55px; }
+  div[id*="modal_callback"] .textarea_field .allert_tell,
+  div[id*="modal_callback"] .textarea_field .allert {
+    right: 0; }
   div[id*="modal_callback"] .btn_white {
     width: 100%;
     max-width: 400px;
     margin: 50px auto 50px;
     background-color: #f4e821;
+    border: 3px solid #000;
+    padding-top: 3px;
     border-color: #000; }
     div[id*="modal_callback"] .btn_white:hover {
       background-color: #fff; }
@@ -808,7 +813,8 @@ div[id*="modal_politics"] {
   line-height: 54px; }
 
 .textarea_field .allert, .textarea_field .allert_tell {
-  margin-top: 8px;
+  margin-top: 12px;
+  top: 0;
   right: 10px; }
 
 .allert, .allert_tell {
@@ -987,12 +993,12 @@ div[id*="modal_politics"] {
     background: transparent;
     padding: 0px 25px 2px;
     color: #f4e821;
-    font: 14px/20px "GothamProRegular", sans-serif; }
+    font: 14px/30px "GothamProRegular", sans-serif; }
   .field textarea {
     background: transparent;
-    padding: 0px 25px 2px;
+    padding: 0px 25px 2px 10px;
     color: #f4e821;
-    font: 14px/20px "GothamProRegular", sans-serif; }
+    font: 14px/30px "GothamProRegular", sans-serif; }
 
 .field:before {
   content: "";
@@ -1454,7 +1460,8 @@ input:-ms-input-placeholder {
       float: none;
       margin-top: 20px; }
   div[id*="modal_callback"] {
-    min-width: 400px; }
+    min-width: 400px;
+    max-height: 100vh; }
     div[id*="modal_callback"] .md-content {
       padding: 35px;
       background: #fff; }
@@ -1469,6 +1476,12 @@ input:-ms-input-placeholder {
     div[id*="modal_callback"] .field {
       max-width: 360px;
       width: 100%; }
+      div[id*="modal_callback"] .field textarea {
+        height: 60px; }
+    div[id*="modal_callback"] .field + .field {
+      margin-top: 25px; }
+    div[id*="modal_callback"] .btn_white {
+      margin-bottom: 25px; }
   div[id*='modal_politics'] h2 {
     padding-top: 70px; }
   div[id*='modal_politics'] .btn_close_modal {
@@ -1477,18 +1490,21 @@ input:-ms-input-placeholder {
 @media (max-width: 535px) {
   div[id*="modal_callback"] {
     min-width: 310px; }
+    div[id*="modal_callback"] .md-content {
+      padding-right: 10px;
+      padding-left: 10px; }
     div[id*="modal_callback"] .btn_white {
       width: 100%; }
     div[id*="modal_callback"] .field input {
-      width: 170px; }
+      width: 220px; }
     div[id*="modal_callback"] .field .bar {
-      width: 170px; }
+      width: 220px; }
     div[id*="modal_callback"] .field:before {
-      width: 170px; }
+      width: 220px; }
   #sec_02 .beforeheader, #sec_02 .header, #sec_02 .header_main, #sec_02 .sec_number {
     width: 100%; }
   #sec_04 .star_text {
-    width: 50%;
+    width: 60%;
     font-size: 13px; }
   #sec_05 .mobile {
     display: none; }
@@ -1508,14 +1524,14 @@ input:-ms-input-placeholder {
     #sec_08 form .field:before {
       width: 200px; }
     #sec_08 form .input_box {
-      width: 270px;
+      width: 100%;
       float: none;
       margin: 0 auto; }
     #sec_08 form .btn_white {
       width: 100%;
       float: none; }
   #sec_09 {
-    padding-top: 100px; }
+    padding-top: 70px; }
     #sec_09 .header {
       margin-bottom: 20px; }
     #sec_09 .number_perc {
@@ -1525,7 +1541,7 @@ input:-ms-input-placeholder {
     #sec_10 .item:before {
       display: none; }
   #sec_12 {
-    padding-bottom: 90px; }
+    padding-bottom: 70px; }
     #sec_12 form {
       width: 100%;
       max-width: 320px; }

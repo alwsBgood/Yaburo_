@@ -66,16 +66,25 @@ div[id*="modal_callback"]{
     }
     textarea{
       color: #000;
+      height: 80px;
     }
   }
   .field+.field {
    margin-top: 55px
   }
+  .textarea_field{
+     .allert_tell,
+     .allert{
+      right: 0;
+     }
+    }
   .btn_white{
     width: 100%;
     max-width: 400px;
     margin: 50px auto 50px;
     background-color: $main_color;
+    border: 3px solid #000;
+    padding-top: 3px;
     border-color: #000;
     &:hover{
       background-color: #fff;
@@ -165,7 +174,8 @@ div[id*="modal_politics"]{
 
 .textarea_field{
   .allert, .allert_tell {
-    margin-top: 8px;
+    margin-top: 12px;
+    top: 0;
     right: 10px;
   }
 }
@@ -356,13 +366,13 @@ div[id*="modal_politics"]{
     background: transparent;
     padding: 0px 25px 2px;
     color: $main_color;
-    font: 14px/20px $main_font;
+    font: 14px/30px $main_font;
   }
   textarea{
     background: transparent;
-    padding: 0px 25px 2px;
+    padding: 0px 25px 2px 10px;
     color: $main_color;
-    font: 14px/20px $main_font;
+    font: 14px/30px $main_font;
   }
 }
 

@@ -1,0 +1,164 @@
+/* ================================*/
+/* ==========================*/
+@import url(../libs/niftymodal/component.css);
+.hidden {
+  height: 0;
+  width: 0; }
+
+.field {
+  position: relative;
+  display: inline-block; }
+
+div[id*="modal_politics"] {
+  text-align: center; }
+  div[id*="modal_politics"] h2 {
+    padding-top: 50px; }
+
+.md_large {
+  max-width: 100%;
+  width: 90%; }
+
+.md_large .md-content > div.md_content {
+  padding: 0px 40px 0px; }
+
+.md_large .md-content p {
+  font-size: 0.9em;
+  line-height: 1.4; }
+
+.md_large .md-content p:first-child {
+  padding-top: 24px; }
+
+.md_large .md-content p:last-child {
+  padding-bottom: 24px; }
+
+.md_large .md_content {
+  max-height: 680px;
+  overflow: auto;
+  padding-top: 24px; }
+
+.md_content:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 24px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+  background-repeat: repeat-x; }
+
+.md_content:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 24px;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  background-repeat: repeat-x; }
+
+.md-content h2 {
+  text-align: center; }
+
+.md_bottom {
+  padding: 12px 0 0 0; }
+
+.md-content .form_input {
+  width: 45%; }
+
+.form_icon {
+  position: absolute;
+  width: 40px;
+  color: #cfcfcf; }
+
+.form_icon i {
+  font-size: 18px;
+  line-height: 54px; }
+
+.textarea_field .allert, .textarea_field .allert_tell {
+  margin-top: 12px;
+  top: 0;
+  right: 10px; }
+
+.allert, .allert_tell {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  margin-top: -19px;
+  display: block;
+  right: 0px;
+  height: 20px;
+  width: 20px;
+  color: #FF6565;
+  cursor: default; }
+
+.allert:hover, .allert_tell:hover {
+  text-decoration: none; }
+
+.allert span, .allert_tell span {
+  display: none;
+  opacity: 0;
+  padding: 5px;
+  margin-left: 5px;
+  line-height: 14px;
+  color: #000;
+  font-style: italic;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  min-width: 140px;
+  text-align: center; }
+
+.allert:hover span, .allert_tell:hover span {
+  border: 1px solid #FF6565;
+  background: #fff;
+  display: inline;
+  position: absolute;
+  color: #4e4e4e;
+  right: 24px;
+  top: -10px;
+  opacity: 1; }
+
+.btn_close_modal {
+  position: absolute;
+  right: 15px;
+  z-index: 10;
+  top: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+  .btn_close_modal svg {
+    width: 40px; }
+  .btn_close_modal a {
+    color: #fefefe;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    display: block; }
+    .btn_close_modal a svg .aaa {
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      fill: #d4d4d4; }
+  .btn_close_modal a:hover {
+    color: #000; }
+    .btn_close_modal a:hover svg .aaa {
+      fill: #000; }
+
+.t_small {
+  font-size: 14px; }
