@@ -1,17 +1,13 @@
 <?php
 // Параметры для подключения
-/*$db_host = "localhost";
-$db_user = "root"; // Логин БД
-$db_password = "z"; // Пароль БД
-$database = "allinsol_reg"; // БД*/
 $db_host = "qagirl.mysql.ukraine.com.ua";
-$db_user = "qagirl_db"; // Логин БД
-$db_password = "CS3H7lta"; // Пароль БД
-$database = "qagirl_db"; // БД
+$db_user = "qagirl_yaburo"; // Логин БД
+$db_password = "czy4ndhu"; // Пароль БД
+$database = "qagirl_yaburo"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
- 
+
 // Выборка базы
 mysql_select_db($database, $db);
 
@@ -71,7 +67,6 @@ $data = array(
   'name' => $name,
   'phone'     => GetClearPhoneNumber($phone),
   'email'     => $email,
-  'registrationType' => getVar('registrationType'),
   'orderType' => getVar('orderType'),
   'date_visited' => date("d.m.Y"),
   'time_visited' => date("G:i:s"),
@@ -99,23 +94,7 @@ $order_type_id = null;
 if ($data['orderType'] == 'order-add') {
   $order_type_id = '';
 }
-switch ($data['registrationType']) {
-    case 'default_registration':
-        $registration_type_id = '';
-        break;
-    case 'standart':
-        $registration_type_id = '';
-        break;
-    case 'super':
-        $registration_type_id = '';
-        break;
-    case 'special':
-        $registration_type_id = "";
-        break;
-    default:
-        throw new \RuntimeException('Undefined Registration Type. Add class default_registration for default');
-        break;
-}
+
 
 $fullName = explode(' ', $data['name'], 2);
 
@@ -127,9 +106,7 @@ if (empty($data['confirmation_phone'])) {
                       `last_name`,
                       `email`,
                       `phone`,
-                      `registrationType`,
                       `orderType`,
-                      `registration_type_id`,
                       `order_type_id`,
                       `date_visited`,
                       `time_visited`,
@@ -154,9 +131,7 @@ if (empty($data['confirmation_phone'])) {
                     '".(empty($fullName[1]) ? '-' : $fullName[1])."',
                     '".$data['email']."',
                     '".$data['phone']."',
-                    '".$data['registrationType']."',
                     '".$data['orderType']."',
-                    '".$registration_type_id."',
                     '".$order_type_id."',
                     '".$data['date_visited']."',
                     '".$data['time_visited']."',

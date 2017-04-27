@@ -5,9 +5,9 @@ $db_user = "root"; // Логин БД
 $db_password = "z"; // Пароль БД
 $database = "allinsol_reg"; // БД*/
  $db_host = "qagirl.mysql.ukraine.com.ua";
-$db_user = "qagirl_db"; // Логин БД
-$db_password = "CS3H7lta"; // Пароль БД
-$database = "qagirl_db"; // БД
+$db_user = "qagirl_yaburo"; // Логин БД
+$db_password = "czy4ndhu"; // Пароль БД
+$database = "qagirl_yaburo"; // БД
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
 
@@ -31,7 +31,6 @@ mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
                       `utm_content`,
                       `ref`,
                       `ip_address`,
-                      `city`,
                       `client_id`,
                       `utmcsr`,
                       `utmccn`,
@@ -49,7 +48,6 @@ mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
                     '".$data['utm_content']."',
                     '".$data['ref']."',
                     '".$data['ip_address']."',
-                    '".$data['city']."',
                     '".$data['client_id']."',
                     '".$data['utmcsr']."',
                     '".$data['utmccn']."',

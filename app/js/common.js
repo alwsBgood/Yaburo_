@@ -1,4 +1,4 @@
-$('#sec_01 .content_animation').addClass('fade-in-left')
+$('#sec_01 .sec_01-slider_controll').addClass('fade-in-left')
 jQuery(document).ready(function($) {
   // $('#page-preloader').fadeOut(700);
   setTimeout(function() {
@@ -79,23 +79,19 @@ $(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
         $('div.md-show').removeClass('md-show');
-        $('form').trigger("reset");
-        window.location.href = 'http://lp.yaburo.design//success';
           // Отправка в базу данных
-        //   $.ajax({
-        //    type: 'POST',
-        //    url: 'db/registration.php',
-        //    dataType: 'json',
-        //    data: form.serialize(),
-        //    success: function(response) {
-        //      console.info(response);
-        //      console.log(form.serialize());
-        //      if (response.status == 'success') {
-        //       $('form').trigger("reset");
-        //       window.location.href = '/success';
-        //     }
-        //   }
-        // });
+          $.ajax({
+           type: 'POST',
+           url: 'db/registration.php',
+           dataType: 'json',
+           data: form.serialize(),
+           success: function(response) {
+             if (response.status == 'success') {
+              $('form').trigger("reset");
+              window.location.href = 'http://lp.yaburo.design//success';
+            }
+          }
+        });
       },
       error: function(xhr, str) {
         console.log("Erorr")
@@ -238,7 +234,7 @@ $('.sec_06-slider_controll').slick({
 
 $('.slider_09').slick({
   slidesToShow: 2,
-  dots: false,
+  dots: true,
   arrows: false,
   infinite: true,
   slidesToScroll: 1,
@@ -300,6 +296,22 @@ $('.mobile_slider_07-slider_controll').slick({
   fade: true
 });
 
+
+$('.mobile.photos').slick({
+  slidesToShow: 2,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 430,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
 
 
 $('.portfolio_slider').slick({
@@ -457,7 +469,7 @@ $('#sec_02').waypoint(
 
         }
     },
-    {offset: "350px"}
+    {offset: "550px"}
 
 );
 
@@ -472,7 +484,7 @@ $('#sec_03').waypoint(
             $('#sec_03 .animation_block').addClass('animation');
         }
     },
-    {offset: "450px"}
+    {offset: "650px"}
 
 );
 
@@ -490,7 +502,7 @@ $('#sec_04').waypoint(
             }, 1600);
         }
     },
-    {offset: "450px"}
+    {offset: "550px"}
 
 );
 
@@ -514,7 +526,7 @@ $('#sec_05').waypoint(
 
         }
     },
-    {offset: "350px"}
+    {offset: "550px"}
 
 );
 
@@ -593,7 +605,7 @@ $('#sec_06').waypoint(
             $('#sec_06 .slick-current .animation_block').addClass('animation');
         }
     },
-    {offset: "300px"}
+    {offset: "400px"}
 
 );
 
@@ -616,7 +628,7 @@ $('#sec_07').waypoint(
 
         }
     },
-    {offset: "350px"}
+    {offset: "550px"}
 
 );
 
@@ -631,7 +643,7 @@ $('#sec_08').waypoint(
             $('#sec_08 .btn_white').addClass('fade-in-bottom');
         }
     },
-    {offset: "1200px"}
+    {offset: "1300px"}
 
 );
 
@@ -649,7 +661,7 @@ $('#sec_09').waypoint(
             }, 1600);
         }
     },
-    {offset: "1200px"}
+    {offset: "1300px"}
 
 );
 
@@ -664,7 +676,7 @@ $('#sec_10').waypoint(
             $('#sec_10 .item').addClass('fade-in-right');
         }
     },
-    {offset: "1200px"}
+    {offset: "1300px"}
 
 );
 
@@ -680,7 +692,7 @@ $('#sec_11').waypoint(
             $('#sec_11 .content_block').addClass('fade-in-bottom');
         }
     },
-    {offset: "1400px"}
+    {offset: "1500px"}
 
 );
 
@@ -695,7 +707,7 @@ $('#sec_12').waypoint(
             $('#sec_12 .btn_white').addClass('fade-in-bottom');
         }
     },
-    {offset: "1400px"}
+    {offset: "1500px"}
 
 );
 
