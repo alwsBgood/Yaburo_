@@ -556,7 +556,7 @@ $('#sec_06').waypoint(
             );
             $('.2_animate_number').animateNumber(
             {
-                number: 1180 * decimal_factor,
+                number: 58800 * decimal_factor,
 
                 numberStep: function(now, tween) {
                     var floored_number = Math.floor(now) / decimal_factor,
