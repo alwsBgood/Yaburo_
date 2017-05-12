@@ -549,6 +549,14 @@ body.unscroll {
   #sec_01 .phone_box {
     margin-top: 8px;
     float: right; }
+  #sec_01 .company {
+    display: inline-block;
+    color: #000;
+    margin-left: 40px;
+    line-height: 34px;
+    vertical-align: top; }
+  #sec_01 .company.mobile {
+    display: none; }
   #sec_01 .tel {
     color: #000;
     position: relative;
@@ -1040,6 +1048,12 @@ body.unscroll {
     padding-top: 0; }
     #sec_01 .top {
       display: none; }
+    #sec_01 .company.mobile {
+      display: block;
+      line-height: 60px;
+      margin-left: 0; }
+    #sec_01 .pattern_box {
+      top: 60px; }
     #sec_01 .content_box {
       margin-top: 0;
       padding-top: 0px; }

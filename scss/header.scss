@@ -609,6 +609,8 @@ body.unscroll{
         margin-top: 8px;
         float: right;
     }
+    .company{display: inline-block; color: #000; margin-left: 40px; line-height: 34px; vertical-align: top;}
+    .company.mobile{display: none;}
     .tel{
         color: #000;
         position: relative;
@@ -1248,6 +1250,14 @@ body.unscroll{
         padding-top: 0;
         .top{
             display: none;
+        }
+        .company.mobile{
+            display: block;
+            line-height: 60px;
+            margin-left: 0;
+        }
+        .pattern_box{
+            top: 60px;
         }
         .content_box{
             margin-top: 0;
