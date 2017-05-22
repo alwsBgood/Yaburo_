@@ -636,6 +636,10 @@ body.unscroll {
     bottom: 60px; }
     #sec_01 .slider_01 img {
       width: 100%; }
+    #sec_01 .slider_01 .first_image .anim_cont {
+      opacity: 1; }
+  #sec_01 .slider_01.slick-initialized .anim_cont {
+    opacity: 0; }
 
 #mobile_menu_trigger {
   display: none;
@@ -1139,7 +1143,7 @@ body.unscroll {
   position: relative; }
 
 .content_animation {
-  opacity: 0; }
+  opacity: 1; }
 
 .fade-in-left {
   -webkit-animation: fade-in-left 0.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;

@@ -698,6 +698,27 @@ body.unscroll{
         img{
             width: 100%;
         }
+        .first_image{
+            .anim_cont{
+                opacity: 1;
+            }
+        }
+        // &:before{
+        //     position: absolute;
+        //     content: '';
+        //     width: 100%;
+        //     height: 100%;
+        //     left: 0px;
+        //     top: 0px;
+        //     background: url(img/sec_01-slide-2.png) top center no-repeat;
+        //     background-size: contain;
+        //     z-index: 10;
+        // }
+    }
+    .slider_01.slick-initialized{
+        .anim_cont{
+            opacity: 0;
+        }
     }
 }
 
@@ -1363,7 +1384,7 @@ body.unscroll{
     position: relative;
 }
 
-.content_animation{opacity:0}
+.content_animation{opacity:1}
 
 .fade-in-left {
     -webkit-animation: fade-in-left .7s cubic-bezier(0.860, 0.000, 0.070, 1.000) forwards;
