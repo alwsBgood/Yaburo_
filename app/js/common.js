@@ -23,8 +23,11 @@ $(function() {
 
    var error;
    var ref = btn.closest('form').find('[required]');
-   var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
-   $('[name=city').val(loc);
+   // var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
+   // $('[name=city').val(loc);
+   $.get("http://ipinfo.io", function(response) {
+    $('[name=city]').val(response.city + ', ' + response.country)
+   }, "jsonp");
    var msg = btn.closest('form').find('input, textarea, select');
    var short_msg = btn.closest('form').find('[name=project_name], [name=admin_email], [name=form_subject], [name=city], [name=page_url], [name=user_agent], [type="text"], [type="email"], [type="tel"]');
    var msg = btn.closest('form').find('input, textarea, select');
