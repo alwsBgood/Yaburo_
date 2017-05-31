@@ -17,7 +17,7 @@ body.unscroll{
     padding: 0 45px;
     position: relative;
     overflow: hidden;
-}
+}           
 
 .md-modal.md-show{
     opacity: 1;
@@ -497,6 +497,7 @@ body.unscroll{
             max-width: 360px;
             padding-right: 40px;
         }
+        .btn{margin-top: 40px;}
         .items_row{
             margin-top: 100px;
             .item{
@@ -559,18 +560,18 @@ body.unscroll{
     }
 
     .slick-next{
-        top: 170px;
+        bottom: 60px;
         left: 100px;
-        // top: initial;
+        top: initial;
     }
     .slick-prev{
-        top: 170px;
+        bottom: 60px;
         left: 0px;
-        // top: initial;
+        top: initial;
     }
     .slide_number{
         position: absolute;
-        top: 160px;
+        bottom: 0px;
         left: 0px;
         width: 116px;
         text-align: center;
@@ -608,8 +609,16 @@ body.unscroll{
     .phone_box{
         margin-top: 8px;
         float: right;
+        display: inline-block;
     }
     .company{display: inline-block; color: #000; margin-left: 40px; line-height: 34px; vertical-align: top;}
+    .adress{
+        display: inline-block;
+        color: #000;
+        margin-left: 40px;
+        line-height: 34px;
+        vertical-align: top;
+    }
     .company.mobile{display: none;}
     .tel{
         color: #000;
@@ -640,7 +649,7 @@ body.unscroll{
         right: 80px;
         background-repeat: repeat;
         background-position: top center;
-        background-image: url(img/pattern.png)
+        background-image: url(../img/pattern.png)
     }
     .content_box{
         position: relative;
@@ -710,7 +719,7 @@ body.unscroll{
         //     height: 100%;
         //     left: 0px;
         //     top: 0px;
-        //     background: url(img/sec_01-slide-2.png) top center no-repeat;
+        //     background: url(../img/sec_01-slide-2.png) top center no-repeat;
         //     background-size: contain;
         //     z-index: 10;
         // }
@@ -996,7 +1005,9 @@ body.unscroll{
             padding-top: 0;
             .header{
                 font-size: 28px;
+                line-height: 34px;
             }
+            .btn{margin-top: 90px;}
             .items_row{
                 margin-top: 40px;
                 .item{
@@ -1050,6 +1061,7 @@ body.unscroll{
     &:before{
         display: none
     }
+    .phone_box{display: none}
     .content_box{
         margin-top: 85px;
         .underheader{
@@ -1219,7 +1231,17 @@ body.unscroll{
       }
     }
 }
-
+@media (max-width: 560px) {
+    #sec_01{
+        .adress{
+            font-size: 10px;
+            margin-left: 20px;
+        }
+        .company{
+            margin-left: 20px;
+        }
+    }
+}
 
 @media (max-width: 540px) {
     #mobile_menu_trigger.scrolled{
@@ -1273,12 +1295,16 @@ body.unscroll{
             display: none;
         }
         .company.mobile{
-            display: block;
+            display: inline-block;
             line-height: 60px;
             margin-left: 0;
         }
+        .adress.mobile{
+            display: inline-block;
+            line-height: 60px;
+        }
         .pattern_box{
-            top: 60px;
+            top: 94px;
         }
         .content_box{
             margin-top: 0;
@@ -1288,7 +1314,7 @@ body.unscroll{
                 line-height: 42px;
                 margin: 0 -15px;
                 padding: 80px 15px 60px;
-                background-image: url(img/sec_01-mob.png);
+                background-image: url(../img/sec_01-mob.png);
                 background-position: top -40px center;
                 background-repeat: no-repeat;
                 margin-bottom: 40px;
@@ -1336,6 +1362,12 @@ body.unscroll{
 
 
 @media (max-width: 430px) {
+    #sec_01{
+        .adress.mobile{
+            display: block;
+            line-height: 35px;
+        }
+    }
     #portfolio_modal{
         .photos{
             max-width: 155px;
