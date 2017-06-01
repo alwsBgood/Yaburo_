@@ -459,7 +459,11 @@ body.unscroll {
       padding-right: 40px; }
     #portfolio_modal .content_block .btn {
       margin-top: 40px;
-      margin-left: 385px; }
+      margin-left: 385px;
+      color: #000;
+      background-color: #f4e821; }
+      #portfolio_modal .content_block .btn:hover {
+        background-color: #fff; }
     #portfolio_modal .content_block .items_row {
       margin-top: 100px; }
       #portfolio_modal .content_block .items_row .item {
