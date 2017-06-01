@@ -458,7 +458,8 @@ body.unscroll {
       max-width: 360px;
       padding-right: 40px; }
     #portfolio_modal .content_block .btn {
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-left: 385px; }
     #portfolio_modal .content_block .items_row {
       margin-top: 100px; }
       #portfolio_modal .content_block .items_row .item {
@@ -512,16 +513,14 @@ body.unscroll {
   #portfolio_modal .portfolio_trigger.visible {
     opacity: 1; }
   #portfolio_modal .slick-next {
-    bottom: 60px;
-    left: 100px;
-    top: initial; }
+    top: 170px;
+    left: 100px; }
   #portfolio_modal .slick-prev {
-    bottom: 60px;
-    left: 0px;
-    top: initial; }
+    top: 170px;
+    left: 0px; }
   #portfolio_modal .slide_number {
     position: absolute;
-    bottom: 0px;
+    top: 163px;
     left: 0px;
     width: 116px;
     text-align: center;
@@ -564,8 +563,10 @@ body.unscroll {
     display: inline-block;
     color: #000;
     margin-left: 40px;
-    line-height: 34px;
+    line-height: 38px;
     vertical-align: top; }
+  #sec_01 .adress.mobile {
+    display: none; }
   #sec_01 .company.mobile {
     display: none; }
   #sec_01 .tel {
@@ -837,7 +838,9 @@ body.unscroll {
   #portfolio_modal .content_block .items_row .item .title {
     display: block; }
     #portfolio_modal .content_block .items_row .item .title:before {
-      width: 90%; } }
+      width: 90%; }
+  #portfolio_modal .content_block .btn {
+    margin-left: 320px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   #mobile_menu_trigger {
@@ -852,7 +855,7 @@ body.unscroll {
       font-size: 28px;
       line-height: 34px; }
     #portfolio_modal .content_block .btn {
-      margin-top: 90px; }
+      margin-left: 240px; }
     #portfolio_modal .content_block .items_row {
       margin-top: 40px; }
       #portfolio_modal .content_block .items_row .item {
@@ -925,6 +928,8 @@ body.unscroll {
     padding-top: 0; }
     #portfolio_modal .content_block .description_text {
       width: 70%; }
+    #portfolio_modal .content_block .btn {
+      margin-left: 0; }
     #portfolio_modal .content_block .header {
       display: block;
       margin-bottom: 15px; }

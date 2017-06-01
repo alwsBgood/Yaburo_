@@ -497,7 +497,10 @@ body.unscroll{
             max-width: 360px;
             padding-right: 40px;
         }
-        .btn{margin-top: 40px;}
+        .btn{
+            margin-top: 40px;
+            margin-left: 385px;
+        }
         .items_row{
             margin-top: 100px;
             .item{
@@ -560,18 +563,18 @@ body.unscroll{
     }
 
     .slick-next{
-        bottom: 60px;
+        top: 170px;
         left: 100px;
-        top: initial;
+        // top: initial;
     }
     .slick-prev{
-        bottom: 60px;
+        top: 170px;
         left: 0px;
-        top: initial;
+        // top: initial;
     }
     .slide_number{
         position: absolute;
-        bottom: 0px;
+        top: 163px;
         left: 0px;
         width: 116px;
         text-align: center;
@@ -616,9 +619,10 @@ body.unscroll{
         display: inline-block;
         color: #000;
         margin-left: 40px;
-        line-height: 34px;
+        line-height: 38px;
         vertical-align: top;
     }
+    .adress.mobile{display: none}
     .company.mobile{display: none;}
     .tel{
         color: #000;
@@ -988,6 +992,7 @@ body.unscroll{
                 width: 90%;
               }
             }
+            .btn{margin-left: 320px;}
         }
     }
 }
@@ -1007,7 +1012,7 @@ body.unscroll{
                 font-size: 28px;
                 line-height: 34px;
             }
-            .btn{margin-top: 90px;}
+            .btn{margin-left: 240px;}
             .items_row{
                 margin-top: 40px;
                 .item{
@@ -1103,6 +1108,7 @@ body.unscroll{
             .description_text{
                 width: 70%;
             }
+            .btn{margin-left: 0;}
             .header{
                 display: block;
                 margin-bottom: 15px;
