@@ -8,11 +8,11 @@
 
 <head>
 <!-- Google Tag Manager -->
-<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M2JX5P9');</script>-->
+})(window,document,'script','dataLayer','GTM-M2JX5P9');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -22,7 +22,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <meta name="description" content="Создайте мощный образ своего бренда через интерьер! Эмоциональный интерьерный дизайн для офисных и коммерческих объектов в Украине.">
     <meta name="keywords" content="дизайн интерьера, дизайн офиса, дизайн коммерческих объектов, дизайн интерьера в Киеве, дизайн интерьера в Украине">
-
     <meta property="og:description" content="Создайте мощный образ своего бренда через интерьер! Эмоциональный интерьерный дизайн для офисных и коммерческих объектов в Украине." />
 
     <meta property="og:image" content="http://lp.yaburo.design/img/OG.png" />
