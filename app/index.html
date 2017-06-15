@@ -664,8 +664,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="sec_number text--italic">03</p>
                         <p class="text--header header">Ваш стиль <br> Ваш статус </p>
                         <img class="mobile" src="img/sec_05-img-mobile.png" alt="YABURO">
-                        <p class="text--italic afterheader">Получите консультацию по созданию эмоционального образа Вашего бренда</p>
-                        <a id="cta_2" class="md-trigger btn flex" data-modal="modal_callback">Получить консультацию</a>
+                        <p class="text--italic afterheader">Получите бесплатный аудит вашего офиса с документальным заключением рекомендаций от дизайнера</p>
+                        <a id="cta_2" class="md-trigger btn flex" data-modal="modal_callback">Заказать аудит</a>
                     </div>
                 </div>
                 <div class="col-5">
@@ -887,7 +887,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="content_animation">
                         <p class="text--header header">Оставьте</p>
                         <p class="text--header header_main">заявку</p>
-                        <p class="text--title title">и получите индивидуальную <br>консультацию от Ярославы <br> Рыбиной бесплатно</p>
+                        <p class="text--title title">Оставьте заявку и получите бесплатный аудит вашего офиса с документальным заключением рекомендаций от дизайнера </p>
                     </div>
                 </div>
                 <div class="col-7">
@@ -939,7 +939,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </span>
                         </div>
 
-                        <button type="submit" class="btn_white" name="send">Получить консультацию</button>
+                        <button type="submit" class="btn_white" name="send">Заказать аудит</button>
 
                         <div class="clear"></div>
                     </form>
